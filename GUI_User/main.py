@@ -51,7 +51,7 @@ plt.suptitle("Temperatura ambiental",
              transform=fig.transFigure,
              color=palette["background"],
              bbox=dict(facecolor=palette["primary"], edgecolor="none", pad=10.0))
-plt.ylim(10, 50)
+plt.ylim(20, 40)
 plt.xlim(0,limit)
 #------------------------------------------------------------------------------------------
 #Presión
@@ -68,7 +68,7 @@ plt.suptitle("Presión atmosférica",
              transform=fig.transFigure,
              color=palette["background"],
              bbox=dict(facecolor="#a6f7ef", edgecolor="none", pad=10.0))
-plt.ylim(79100, 79900)
+plt.ylim(79300, 79900)
 plt.xlim(0,limit)
 
 #------------------------------------------------------------------------------------------
@@ -88,7 +88,7 @@ plt.suptitle("Altitud",
              color=palette["background"],
              bbox=dict(facecolor="#b3f7a6", edgecolor="none", pad=10.0))
 
-plt.ylim(2000, 2100)
+plt.ylim(2000, 2040)
 plt.xlim(0,limit)
 #------------------------------------------------------------------------------------------
 #Humedad aire
@@ -113,7 +113,7 @@ plt.xlim(0,limit)
 figR = plt.figure()
 ax = figR.add_subplot(111)
 hlR, = plt.plot(rData[0], rData[1], color = "#16097d")
-ax.set_ylabel("Unidad",
+ax.set_ylabel("Medición",
               ha="center",
               size=16)
 plt.suptitle("Detección de lluvia",
@@ -123,7 +123,7 @@ plt.suptitle("Detección de lluvia",
              transform=fig.transFigure,
              color= palette["background"],
              bbox=dict(facecolor="#a99ff5", edgecolor="none", pad=10.0))
-plt.ylim(0, 2000)
+plt.ylim(750, 1100)
 plt.xlim(0,limit)
 #------------------------------------------------------------------------------------------
 #humedad de la tierra
@@ -131,7 +131,7 @@ figHF = plt.figure()
 ax = figHF.add_subplot(111)
 hlHF, = plt.plot(hfData[0], hfData[1], color = "#590024")
 
-ax.set_ylabel("Unidad",
+ax.set_ylabel("Medición",
               ha="center",
               size=16)
 plt.suptitle("Humedad de la tierra",
@@ -141,7 +141,7 @@ plt.suptitle("Humedad de la tierra",
              transform=fig.transFigure,
              color=palette["background"],
              bbox=dict(facecolor="#ffabcd", edgecolor="none", pad=10.0))
-plt.ylim(200, 600)
+plt.ylim(300, 500)
 plt.xlim(0,limit)
 #------------------------------------------------------------------------------------------
 
